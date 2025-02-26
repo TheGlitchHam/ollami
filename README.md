@@ -60,7 +60,7 @@ docker compose up -d
 OR if compose prod is failing
 
 ```bash
-docker compose -f docker-compose.prod.yml up -d
+docker compose -f docker-compose.dev.yml up -d
 ```
 
 
