@@ -5,7 +5,7 @@
   async function detectOllama() {
     try {
       // try fetching the ollama local endpoint
-      const response = await fetch("http://127.0.0.1:11434");
+      const response = await fetch("/api/status");
 
       // if the response is ok, then ollama is activated
       if (response.ok) {
