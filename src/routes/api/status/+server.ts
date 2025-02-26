@@ -1,8 +1,8 @@
 import type { RequestHandler } from '@sveltejs/kit';
-import { env } from '$env/dynamic/private';
+import { OLLAMA_API_URL } from '$env/static/private';
 
 export const GET: RequestHandler = async () => {
-    const targetUrl = env.OLLAMA_API_URL;
+    const targetUrl = OLLAMA_API_URL;
     if (!targetUrl) {
         return new Response(JSON.stringify({ error: 'API_URL not set in environment variables' }), { status: 500 });
     }
