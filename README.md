@@ -56,6 +56,14 @@ Make sure Docker Desktop is open, then run the following command:
 ```bash
 docker compose up -d
 ```
+
+OR if compose prod is failing
+
+```bash
+docker compose -f docker-compose.prod.yml up -d
+```
+
+
 Go to [localhost:5050](http://localhost:5050) to access Ollami!
 
 ### With NPM (Developpers only) 🧰
@@ -84,6 +92,7 @@ npm run dev
 
 > [!TIP]
 > No need to add .env variable, the app will use the default Ollama server locally started while using the `ollama run` command. By default the server is running on `http://127.0.0.1:11434`
+This can be changed in docker-compose files, settings OLLAMA_API_URL
 
 #### Explore Available Models
 
