@@ -296,7 +296,21 @@ export let initialModels = [
 		popularity: 164.3,
 		fav: false
 	},
+	{
+		name: 'Phi 3.5 Mini',
+		image: 'phi3.5:latest',
+		parameters: '3.8B',
+		tags: ['text', 'small', 'performance'],
+		size: 2.3,
+		context: 128000,
+		icon: 'microsoft.svg',
+		description:
+			'Phi-3.5-mini is a lightweight, state-of-the-art open model built upon datasets used for Phi-3 - synthetic data and filtered publicly available websites with a focus on very high-quality, reasoning dense data. The model belongs to the Phi-3 model family and supports 128K token context length. The model underwent a rigorous enhancement process, incorporating both supervised fine-tuning, proximal policy optimization, and direct preference optimization to ensure precise instruction adherence and robust safety measures.',
+		installed: false,
 
+		popularity: 164.3,
+		fav: false
+	},
 
 	{
 		name: 'Code Llama',
@@ -338,6 +352,32 @@ export let initialModels = [
 		installed: false,
 
 		popularity: 28.2,
+		fav: false
+	},
+	{
+		name: 'DeepSeek-R1-Distill-Qwen-1.5B',
+		image: 'deepseek-r1:1.5b',
+		parameters: '1.75B',
+		tags: ['code'],
+		size: 1.1,
+		description:
+			'DeepSeek’s first-generation reasoning models, achieving performance comparable to OpenAI-o1 across math, code, and reasoning tasks.',
+		installed: false,
+
+		popularity: 100.4,
+		fav: false
+	},
+	{
+		name: 'DeepSeek-R1-Distill-Qwen-7B',
+		image: 'deepseek-r1:latest',
+		parameters: '7.62B',
+		tags: ['code'],
+		size: 4.7,
+		description:
+			'DeepSeek’s first-generation reasoning models, achieving performance comparable to OpenAI-o1 across math, code, and reasoning tasks.',
+		installed: false,
+
+		popularity: 100.4,
 		fav: false
 	},
 	{
